@@ -7,7 +7,6 @@ Maven 3, Spring 5 MVC, JUnit 5, Logback and Jetty web server. A simple web proje
 
 ### 1.1 Test it with Jetty web server.
 ```
-$ git clone https://github.com/mkyong/maven-examples.git
 $ cd java-web-project 
 $ mvn jetty:run
 ```
