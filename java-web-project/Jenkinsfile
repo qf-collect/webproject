@@ -12,7 +12,9 @@ pipeline {
         }
         stage('build') {
             steps {
-              sh 'mvn -f java-web-project/pom.xml -s settings.xml clean deploy'
+              dir('java-web-project') {
+              sh 'mvn -f pom.xml -s settings.xml clean deploy'
+              }
             }
             post {
                 success {
