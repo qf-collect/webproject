@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('prep') {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/qf-collect/collectcore.git'
+                scm checkout
             }
         }
         stage('build') {
